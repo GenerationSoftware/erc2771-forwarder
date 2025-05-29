@@ -1,3 +1,19 @@
+# ERC2771 Forwarder
+
+This project implements a customized version of OpenZeppelin's ERC2771 forwarder contract with enhanced error handling capabilities. The forwarder enables meta-transactions by allowing users to submit transactions without paying gas fees directly, while also providing detailed error messages from the underlying contract execution.
+
+Key features:
+- Based on OpenZeppelin's ERC2771 implementation
+- Returns detailed error messages from the underlying contract execution
+- Supports meta-transactions for gasless transactions
+- Maintains security and compatibility with the ERC2771 standard
+
+## Deployments
+
+| Network | Address |
+|---------|---------|
+| RAF Testnet | 0x0165878A594ca255338adfa4d48449f69242Eb8F |
+
 ## Foundry
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**

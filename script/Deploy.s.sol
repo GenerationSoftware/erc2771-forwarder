@@ -8,7 +8,9 @@ import { ERC2771Forwarder } from "../src/ERC2771Forwarder.sol";
 
 contract DeployScript is Script {
     function run() public {
+        vm.startBroadcast();
         ERC2771Forwarder forwarder = new ERC2771Forwarder("RAF");
         console2.log("ERC2771Forwarder deployed at:", address(forwarder));
+        vm.stopBroadcast();
     }
 }
